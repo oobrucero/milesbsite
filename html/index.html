@@ -3,9 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
   <title>Document</title>
+  <!--PST = GMT - 7 EST = GMT - 5 JST = GMT + 9-->
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getUTCHours();
+      var m = today.getUTCMinutes();
+      var s = today.getUTCSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      
+      var jh = ((h + 9) + 24) % 24;
+      var ph = ((h -7) + 24) % 24;
+      var eh = ((h - 4)+ 24) % 24;
+      var lh = ((h + 1) + 24) % 24;
+      document.getElementById('txt').innerHTML =
+      "PST " + ph + ":" + m + ":" + s +
+      "/EST " + eh + ":" + m + ":" + s +
+      "/GMT " +lh + ":" + m + ":" + s +
+      "/JST " + jh + ":" + m + ":" + s ;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
 </head>
-<body>
-  <p>HIIIIIIII</p>
+<body onload="startTime()">
+  <div class="row">
+    <div class="column c1">
+      <p>cunt</p>
+    </div>
+    <div class="column c2">
+      <p>cunt</p>
+      <br>
+    </div>
+    <div class="column c3">
+      <p id = "txt"></p>
+    </div>
+  </div>
 </body>
 </html>

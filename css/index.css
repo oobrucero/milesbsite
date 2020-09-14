@@ -1,0 +1,25 @@
+.row{
+  height: 100%;
+}
+.column {
+  float: left;
+  width: 33%;
+  height: 100vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c1{
+}
+
+.c2{
+
+}
+
+.c3{
+
+}
