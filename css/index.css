@@ -1,25 +1,49 @@
-.row{
-  height: 100%;
+body { 
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 20px;
 }
-.column {
-  float: left;
-  width: 33%;
-  height: 100vh;
+p {
+  margin: 0;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+a{
+  text-decoration: none;
+  color: black;
 }
-
-.c1{
+a:hover{
+  text-decoration: underline;
 }
-
-.c2{
-
+a:visited{
+  text-decoration: none;
+  color: black;
 }
-
-.c3{
-
+.trp{
+  text-align: right;
+}
+.br {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1vh;
+  margin-right: 1vh;
+}
+.bl{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+}
+.tl{
+  position: fixed;
+  top:0;
+  left: 0;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+.tr{
+  position: fixed;
+  top:0;
+  right:0;
+  margin-top: 1vh;
+  margin-right: 1vh;
 }
