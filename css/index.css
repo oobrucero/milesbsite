@@ -25,6 +25,8 @@ a:visited{
   right: 0;
   margin-bottom: 1vh;
   margin-right: 1vh;
+  width: 50vw;
+  text-align: right;
 }
 .bl{
   position: fixed;
