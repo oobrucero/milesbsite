@@ -23,10 +23,11 @@ a:visited{
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-bottom: 1vh;
-  margin-right: 1vw;
-  width: 32.5vw;
+  margin-right: .5vw;
+  margin-left: .5vw;
+  width: 100%;
   text-align: right;
+  background-color: white;
 }
 .bl{
   position: fixed;
@@ -65,7 +66,7 @@ a:visited{
 }
 .mid{
   border-color: black;
-  margin-right: 32.5vw;
-  margin-left: 32.5vw;
+  margin-right: 20vw;
+  margin-left: 20vw;
   overflow-y: auto;
 }
