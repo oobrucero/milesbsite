@@ -25,15 +25,15 @@ a:visited{
   right: 0;
   margin-right: .5vw;
   margin-left: .5vw;
-  width: 100%;
+  width: 85%;
   text-align: right;
   background-color: white;
 }
 .bl{
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   left:0;
-  margin-bottom: 1vh;
+
   margin-left: 1vw;
 }
 .tl{
@@ -69,4 +69,15 @@ a:visited{
   margin-right: 20vw;
   margin-left: 20vw;
   overflow-y: auto;
+}
+#clk{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: blue;
+}
+@media screen and (max-width: 600px) {
+  #clk{
+    font-size: 12px;
+  }
 }
