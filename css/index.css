@@ -23,8 +23,6 @@ a:visited{
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: .5vw;
-  margin-left: .5vw;
   width: 85%;
   text-align: right;
   background-color: white;
@@ -71,10 +69,12 @@ a:visited{
   overflow-y: auto;
 }
 #clk{
-  position: absolute;
+  position: fixed;
+  margin-right: 2vh;
   bottom: 0;
   right: 0;
-  color: green;
+  background-color: white;
+  width: 85%;
 }
 @media screen and (max-width: 600px) {
   #clk{
