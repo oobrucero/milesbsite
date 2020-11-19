@@ -70,6 +70,7 @@ a:visited{
 }
 #clk, #clk2{
   background-color: white;
+  font-size: 15px;
 }
 .clkcont{
   margin-right: 1vw;
