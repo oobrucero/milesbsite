@@ -11,10 +11,11 @@ function startTime() {
   var eh = ((h - 4)+ 24) % 24;
   var lh = ((h + 1) + 24) % 24;
   document.getElementById('clk').innerHTML =
-  "PST " + ph + ":" + m + ":" + s +
-  "/EST " + eh + ":" + m + ":" + s +
-  "/GMT " +lh + ":" + m + ":" + s +
-  "/JST " + jh + ":" + m + ":" + s ;
+  "&#127482;&#127480;PST " + ph + ":" + m + ":" + s +
+  "/EST " + eh + ":" + m + ":" + s ;
+  document.getElementById('clk2').innerHTML = 
+  "&#127468;&#127463;GMT " +lh + ":" + m + ":" + s +
+  "&#127471;&#127477;/JST " + jh + ":" + m + ":" + s ;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {

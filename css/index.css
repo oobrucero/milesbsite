@@ -68,16 +68,12 @@ a:visited{
   margin-left: 20vw;
   overflow-y: auto;
 }
-#clk{
-  position: fixed;
+#clk, #clk2{
+  background-color: white;
+}
+.clkcont{
   margin-right: 1vw;
+  position: fixed;
   bottom: 0;
   right: 0;
-  background-color: white;
-  width: 85%;
-}
-@media screen and (max-width: 600px) {
-  #clk{
-    font-size: 14px;
-  }
 }
