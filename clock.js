@@ -10,12 +10,28 @@ function startTime() {
   var ph = ((h -7) + 24) % 24;
   var eh = ((h - 4)+ 24) % 24;
   var lh = ((h + 1) + 24) % 24;
+  var jhs = jh.toString();
+  var phs = ph.toString();
+  var ehs = eh.toString();
+  var lhs = lh.toString();
+  if (jh < 10) {
+    jhs = "0" + jhs;
+  }
+  if (ph < 10) {
+    phs = "0" + phs;
+  }
+  if (lh < 10) {
+    lhs = "0" + lhs;
+  }
+  if (jh < 10) {
+    lhs = "0" + lhs;
+  }
   document.getElementById('clk').innerHTML =
-  "&#127482;&#127480;PST " + ph + ":" + m + ":" + s +
-  "/&#127482;&#127480;EST " + eh + ":" + m + ":" + s ;
+  "&#127482;&#127480;PST " + phs + ":" + m + ":" + s +
+  "/&#127482;&#127480;EST " + ehs + ":" + m + ":" + s ;
   document.getElementById('clk2').innerHTML = 
-  "&#127468;&#127463;GMT " +lh + ":" + m + ":" + s +
-  "/&#127471;&#127477;JST " + jh + ":" + m + ":" + s ;
+  "&#127468;&#127463;GMT " +lhs + ":" + m + ":" + s +
+  "/&#127471;&#127477;JST " + jhs + ":" + m + ":" + s ;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
