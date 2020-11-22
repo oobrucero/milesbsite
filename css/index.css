@@ -87,5 +87,8 @@ a:visited{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30vw;
+  width: 35vw;
+}
+.pictitle{
+  text-align: center;
 }
