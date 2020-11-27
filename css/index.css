@@ -117,3 +117,9 @@ a:visited{
   margin-left: 30vw;
   overflow-y: auto;
 }
+@media only screen and (max-width: 600px) {
+  .fmid{
+    margin-right: 25vw;
+    margin-left: 25vw;
+  }
+}
