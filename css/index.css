@@ -113,13 +113,8 @@ a:visited{
 }
 .fmid{
   border-color: black;
-  margin-right: 30vw;
-  margin-left: 30vw;
+  margin-right: 25vw;
+  margin-left: 25vw;
   overflow-y: auto;
 }
-@media only screen and (max-width: 600px) {
-  .fmid{
-    margin-right: 25vw;
-    margin-left: 25vw;
-  }
-}
+
