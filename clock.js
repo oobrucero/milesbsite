@@ -16,11 +16,11 @@ function startTime() {
   lh = checkTime(lh);
   
   document.getElementById('clk').innerHTML =
-  "&#127482;&#127480;PST " + ph + ":" + m + ":" + s +
-  "/&#127482;&#127480;EST " + eh + ":" + m + ":" + s ;
+  "&#127482;&#127480; " + ph + ":" + m + ":" + s +
+  "/&#127482;&#127480; " + eh + ":" + m + ":" + s ;
   document.getElementById('clk2').innerHTML = 
-  "&#127468;&#127463;GMT " +lh + ":" + m + ":" + s +
-  "/&#127471;&#127477;JST " + jh + ":" + m + ":" + s ;
+  "&#127468;&#127463; " +lh + ":" + m + ":" + s +
+  "/&#127471;&#127477; " + jh + ":" + m + ":" + s ;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
