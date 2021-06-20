@@ -14,6 +14,7 @@ function startTime() {
   ph = checkTime(ph);
   eh = checkTime(eh);
   lh = checkTime(lh);
+  lh = lh + 1;
   
   document.getElementById('clk').innerHTML =
   "&#127482;&#127480; " + ph + ":" + m + ":" + s +
