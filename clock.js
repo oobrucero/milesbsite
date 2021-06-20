@@ -17,7 +17,7 @@ function startTime() {
   
   document.getElementById('clk').innerHTML =
   "&#127482;&#127480; " + ph + ":" + m + ":" + s +
-  "/&#127482;&#127480;" + eh + ":" + m + ":" + s ;
+  "/&#127482;&#127480; " + eh + ":" + m + ":" + s ;
   document.getElementById('clk2').innerHTML = 
   "🇪🇺 " +lh + ":" + m + ":" + s +
   "/&#127471;&#127477; " + jh + ":" + m + ":" + s ;
