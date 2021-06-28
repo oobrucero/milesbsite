@@ -136,4 +136,6 @@ a:visited{
 .logo{
   display: block;
   margin: auto;
+  width: 45vw;
+  height: 45vw;
 }
