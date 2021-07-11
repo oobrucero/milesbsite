@@ -20,7 +20,7 @@ function startTime() {
   "&#127482;&#127480; " + ph + ":" + m + ":" + s +
   "/&#127482;&#127480; " + eh + ":" + m + ":" + s ;
   document.getElementById('clk2').innerHTML = 
-  "🇪🇺 " +lh + ":" + m + ":" + s +
+  "&#127466;&#127482; " +lh + ":" + m + ":" + s +
   "/&#127471;&#127477; " + jh + ":" + m + ":" + s ;
   var t = setTimeout(startTime, 500);
 }
