@@ -14,16 +14,12 @@ function startTime() {
   ph = checkTime(ph);
   eh = checkTime(eh);
   lh = checkTime(lh);
-  lh = lh + 1;
   
-  document.getElementById('clk').innerHTML =
-  "&#127482;&#127480; " + ph + ":" + m + ":" + s +
-  "/&#127482;&#127480; " + eh + ":" + m + ":" + s ;
-  document.getElementById('clk2').innerHTML = 
-  "&#127466;&#127482; " +lh + ":" + m + ":" + s +
-  "/&#127471;&#127477; " + jh + ":" + m + ":" + s ;
+  document.getElementById('clk').innerHTML = "&#127482;&#127480; " + ph + ":" + m + ":" + s + "/&#127482;&#127480; " + eh + ":" + m + ":" + s ;
+  document.getElementById('clk2').innerHTML =  "&#127466;&#127482; " + lh + ":" + m + ":" + s + "/&#127471;&#127477; " + jh + ":" + m + ":" + s ;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
